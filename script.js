@@ -10,14 +10,18 @@ document.addEventListener('DOMContentLoaded', function(){
         const ValueKhodamNama = khodamNama.value
         const alertNullColumn = document.getElementById('alert')
         const form = document.getElementById('formId')
-        
+        const par = document.getElementById('khodamMessage')
+        const title = document.getElementById('khodamName')
+        const displayKhodam = document.getElementById('displayKhodam')
             if(ValueKhodamNama !== ""){
                 form.setAttribute('hidden', 'true')
                 setTimeout(()=>{
                     // alert(`Khodam ${ValueKhodamNama} adalah: ${khodam[generateKhodam]}`)
 
+
                 }, 2000)
-            alert('tunggu sbntar ya ges!')
+            displayKhodam.removeAttribute('hidden')
+            par.innerText = 'tunggu sebentar gess!'
             }else{
                 // alert('kolom tidak boleh kosong')
                 alertNullColumn.innerText = "kolom tidak boleh kosong"
