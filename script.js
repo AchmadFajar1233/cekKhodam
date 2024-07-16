@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-    const khodam = ["tutup botol", "nasi liwet", "nyi Roro kidul", "Prabu Siliwangi", "wadah beas", 'kuntilanak gyat', 'macan putih mewing', 'brajamusti','genderowo Sigma', 'pocong skibidi']
+    const khodam = ["tutup botol", "nasi liwet", "nyi Roro kidul", "Prabu Siliwangi", "wadah beas", 'kuntilanak gyat', 'macan putih mewing', 'brajamusti','genderowo Sigma', 'pocong skibidi', 'buaya buntung',]
     const khodamNama = document.getElementById('khodamNama')
     
     const submitBtn = document.getElementById('submit')
@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 setTimeout(()=>{
                     title.innerText = khodam[generateKhodam]
                     par.removeAttribute('id')
+                    par.innerText ='Khodam anda adalah: '
                 }, 4000)
+                
             displayKhodam.removeAttribute('hidden')
             par.innerText = 'tunggu sebentar gess!'
             }else{
